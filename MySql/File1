@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS studentdatabase;
+
+use studentdatabase;
+
+CREATE TABLE IF NOT EXISTS students(
+	id INT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    class TINYINT UNSIGNED DEFAULT 0,
+    section VARCHAR(3) DEFAULT 'A',
+    percentage TINYINT UNSIGNED CHECK (percentage>=40),
+    country VARCHAR(50) NOT NULL
+);
+
+INSERT INTO students VALUES (0, 'Haider', 12, 'B', 40), (1, 'ALI', 13, 'C', 49), (3, 'Iman', 7, 'C', 90);
+
+SELECT * FROM students where percentage>80;
