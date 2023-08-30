@@ -1,18 +1,21 @@
 {
-  "name": "node",
+  "name": "database-connectivity",
   "version": "1.0.0",
-  "description": "Basics to Advance of Nodejs",
-  "main": "nodejs1.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.0.1"
   },
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "mysql2": "^3.6.0"
   }
 }
